@@ -3,6 +3,7 @@
 <p>CozyOS is a cool, warm-looking simulation of a computer operating system made as part of stardance.hackclub's "My very own WebOS" mission.</p>
 
 <h1>Features</h1>
+<p>-Glass theme (inspired by manu other designs) <br> -Draggability of windows(little broken) <br> -Counts seconds since website was active</p>
 
 
 
