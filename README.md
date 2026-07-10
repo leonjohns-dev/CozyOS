@@ -1,7 +1,6 @@
 # CozyOS
 
-nothing:>
-
+Cool looking Web OS sim
 credit for background : https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A
 
 <img width="1533" height="725" alt="Screenshot" src="https://github.com/user-attachments/assets/66e5b65a-de28-4aae-b494-0f6cc340bc8b" />
