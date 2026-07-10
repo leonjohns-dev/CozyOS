@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-color:#2A5CA1">
+  <body style="background-image:url(./photos/liana-s-4Vzs0NASt7A-unsplash.jpg); background-size: cover; background-repeat: no-repeat; ">
+    
+    <!--top bar-->
+    <div style="display: flex; backdrop-filter: blur(1px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between; border-radius: 16px;">
+      
+      <p id="welcomeopen" style="margin-left: 16px; padding: 5px; backdrop-filter: blur(1px); background-color: rgba(250, 250, 250, 0.25); border-radius:14px; cursor: pointer">
+        CozyOS 😊
+      </p>
 
-        <h1 style="text-align: center;"> CozyOS - The Beginings</h1>
-        <h2>Lil discription</h2>
-        <p>Hi guys this is my first revition on my CozyOS by the end <br> i hope to make something cool and comfy looking</p>
-        <a href="https://stardance.hackclub.com/projects/33034"> My Project on stardance</a>
-        <p><br>funny pic</p><!--space-->
-        
-        <img  style="width: 300px; height: 300px" src="./photos/skibidicamel.jpg" />
+      <p id="timeElement" style="margin-right: 16px; padding: 5px; backdrop-filter: blur(1px); background-color: rgba(250, 250, 250, 0.25); border-radius:14px ">
+        Time
+      </p>
+    
+    </div>
+
+    <!--Desktop apps-->
+
+    <!--app1 icon -->
+    <div  class="appStyle" id="ideaopen" >
+      <span style="font-size: 60px;">📒</span>
+      <div class="appStyleText">Ideas&fixes</div>
+    </div>
+
+    <div class="window" id = "idea">
+      
+      <div  id="ideaclose" class="closebutton"><p style="transform: translateX(3px) translateY(-14px);">X</p></div>
+      <p class="headertext"id="notesheader" >Ideas & Fixes</p>
+      <p class="windowheader"id="notesheader"></p>
+      <h3>Fixes</h3>
+      <p>-Fixed close button(although hard coded)<br>
+          - Dragging also now works
+      </p>
+
+      <h3>Bugs</h3>
+      <p1>-No borders for apps<br> -No proper screen resize</p1>
+    </div>
+
+    <!--app2 icon-->
+    <div  class="appStyle" id="stopwatchopen" style="transform: translateY(130px)">
+      <span style="font-size: 60px;">⏱️</span>
+      <div class="appStyleText">Activity</div>
+    </div>
+
+    <div class="window" id = "stopwatch">
+      
+      <div  id="stopwatchclose" class="closebutton"><p style="transform: translateX(3px) translateY(-14px);">X</p></div>
+      <p class="headertext"id="stopwatchsheader" >Time since active</p>
+      <p class="windowheader"id="stopwatchheader"></p>
+      <p>A very primitive counter wihout much control</p>
+      ‎ ‎ Time: <span id="timer">0</span>
+    </div>
+    
+    
+
+    <!--Welcome Message-->
+    <div id="welcome" class="window" style = "top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; "> <!--width override here-->
+
+      <div id="welcomeclose" class="closebutton"><p style="transform: translateX(3px) translateY(-14px);">X</p></div>
+      <p class="headertext">Welcome!</p>
+      <p class="windowheader"id="welcomeheader"></p>
+      <h1 style="margin-left: 0.4px;">CozyOS <span style="font-size: 20px;"> by Leon!</span> </h1>
+      <p style="transform: translateY(-10px);">CozyOS is an operating System made for chilling and focusing on your tasks with its variety of apps!</p>
+    
+    </div>
+
+
+    <!--Script Link-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  
+
+ 
 
     </body>
 </html>

@@ -1,0 +1,64 @@
+
+.window {
+    border: solid;
+    border-radius: 16px; 
+    width: fit-content; 
+    position: absolute;  
+    background: #fff; 
+    justify-content: center;
+    padding:5px;
+    backdrop-filter: blur(1px); background-color: rgba(225, 225, 225, .325);
+    top: calc(50% - 240px); left: calc(50% - 260px);
+}
+
+.windowheader {
+  margin:0px;
+
+  border-bottom: solid;
+    padding: 14px 16px 8px 16px;
+}
+
+.headertext {
+  line-height:0.0000001px;
+  margin: 0px;
+  color: #000000;
+  font-weight: 500;
+  justify-content: center;
+  transform: translateY(11px);
+}
+
+.closebutton {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right:7px;
+  cursor: pointer;
+  background-color: #EC6B5E;
+  border-radius: 16px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  color: #ffff;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  
+}
+
+
+.appStyle{
+  position: absolute;
+  top:100px;
+  left:20px;
+  width: 84px;
+  height: 84px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  color: #ffff;
+ backdrop-filter: blur(1px); background-color: rgba(0, 0, 0, 0.325);
+ cursor: pointer;
+ 
+}
+.appStyleText{
+  text-align:center;
+  color: #ffff;
+  transform: translateY(7px);
+
+}
