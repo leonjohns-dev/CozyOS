@@ -6,8 +6,10 @@
 <p>-Glass theme (inspired by manu other designs) <br> -Draggability of windows(little broken) <br> -Counts seconds since website was active</p>
 
 
-
-credit for background : https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A
+<h1>Credits</h1>
+<p>https://github.com/SerenityUX for the tutorial</p>
+<p>Credit for background: https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A</p>
+<p>For AI for helping me better understand the code and helping me with the active time app</p>
 
 
 <img width="1533" height="725" alt="Screenshot" src="https://github.com/user-attachments/assets/66e5b65a-de28-4aae-b494-0f6cc340bc8b" />
