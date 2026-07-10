@@ -1,6 +1,10 @@
 # CozyOS
 
-Cool looking Web OS sim
+<p>CozyOS is a cool, warm-looking simulation of a computer operating system made as part of stardance.hackclub's "My very own WebOS" mission.</p>
+
+<h1>Features</h1>
+
+
 
 credit for background : https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A
 
