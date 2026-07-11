@@ -1,7 +1,5 @@
-
-
-
-
+//Keep the apps closed at the start 
+closeWindow(app1);
 
 
 function updateTime() {
@@ -96,6 +94,4 @@ function openWindow(element) {
 openClose(document.getElementById("welcome"))
 openClose(document.getElementById("app1"))
 
-//Keep the apps closed at the start 
-closeWindow(app1);
 
