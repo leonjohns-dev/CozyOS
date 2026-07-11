@@ -1,5 +1,5 @@
 //Keep the apps closed at the start 
-closeWindow(app1);
+//closeWindow(app1);
 
 
 function updateTime() {
