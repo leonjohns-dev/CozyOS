@@ -2,8 +2,7 @@
 
 
 
-//Functions
-//--------------------------------------------------------------------------------//
+
 
 function updateTime() {
         var currentTime = new Date().toLocaleString();
@@ -96,70 +95,7 @@ function openWindow(element) {
 
 openClose(document.getElementById("welcome"))
 openClose(document.getElementById("app1"))
-//---------------------------------------------------------------------------------------------------//
 
-
-
-/*
-// Make the DIV element draggable:
-dragElement(document.getElementById("welcome"));
-dragElement(document.querySelector("#welcome"));
-
-dragElement(document.getElementById("idea"));
-dragElement(document.querySelector("#idea"));
-
-dragElement(document.getElementById("stopwatch"));
-dragElement(document.querySelector("#idea"));
-
-
-var welcomeScreenClose = document.querySelector("#welcomeclose")
-
-var welcomeScreenOpen = document.querySelector("#welcomeopen")
-
-var welcomeScreen = document.querySelector("#welcome")
-
-welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(welcomeScreen);
-});
-
-welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(welcomeScreen);
-});
-
-
-
-var ideaScreenClose = document.querySelector("#ideaclose")
-
-var ideaScreenOpen = document.querySelector("#ideaopen")
-
-var ideaScreen = document.querySelector("#idea")
-
-ideaScreenClose.addEventListener("click", function() {
-  closeWindow(ideaScreen);
-});
-
-ideaScreenOpen.addEventListener("click", function() {
-  openWindow(ideaScreen);
-});
-
-
-var stopwatchScreenClose = document.querySelector("#stopwatchclose")
-
-var stopwatchScreenOpen = document.querySelector("#stopwatchopen")
-
-var stopwatchScreen = document.querySelector("#stopwatch")
-
-stopwatchScreenClose.addEventListener("click", function() {
-  closeWindow(stopwatchScreen);
-});
-
-stopwatchScreenOpen.addEventListener("click", function() {
-  openWindow(stopwatchScreen);
-});
-
-*/
-
-//----------------------------------------------------------------------------------//
 //Keep the apps closed at the start 
-closeWindow(ideaScreen);
-closeWindow(stopwatch);
+closeWindow(app1);
+
