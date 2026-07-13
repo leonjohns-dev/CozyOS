@@ -24,6 +24,8 @@ setInterval(count, 1000);
 //Drag Element Function
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("app1"));
+dragElement(document.getElementById("app2"));
+
 
 
 function dragElement(elmnt) {
@@ -93,5 +95,21 @@ function openWindow(element) {
 
 openClose(document.getElementById("welcome"))
 openClose(document.getElementById("app1"))
+openClose(document.getElementById("app2"))
+
+wallpaper(document.getElementById("wallpaper1"))
+wallpaper(document.getElementById("wallpaper2"))
+
+//Wallpaper scripts
+function wallpaper(element){
+  document.getElementById(element.id).addEventListener("click", function(){
+    let stringId = document.getElementById(element.id).id.toString();
+    document.body.style.backgroundImage = `url('./wallpaper/${stringId}.jpg')`;
+  })
+}
+
+
+
+
 
 

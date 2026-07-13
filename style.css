@@ -61,3 +61,11 @@
   transform: translateY(7px);
 
 }
+
+.wallpaperStyle{
+  width:219px;
+  height:123;
+  padding:10px;
+  border-radius: 9%;
+  cursor: pointer;
+}

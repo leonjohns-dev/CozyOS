@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-image:url(./photos/liana-s-4Vzs0NASt7A-unsplash.jpg); background-size: cover; background-repeat: no-repeat; ">
+  <body style="background-image:url(./wallpaper/wallpaper1.jpg); background-size: cover; background-repeat: no-repeat; ">
     
     <!--top bar-->
     <div style="display: flex; backdrop-filter: blur(1px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between; border-radius: 16px;">
@@ -34,6 +34,14 @@
       <div class="appStyleText">Updates</div>
     </div>
 
+    <div  class="appStyle" id="app2open" style="transform: translateY(120px);" >
+      <span style="font-size: 60px;">🖼️</span>
+      <div class="appStyleText">Wallpaper</div>
+    </div>
+
+
+    
+
     <div id="app1" class="window" > <!--width override here-->
       <div id="app1header" class="windowheader">Updates!</div>
       <div id="app1close" class="closebutton"></div>
@@ -44,7 +52,19 @@
       <code><p1>2026-07-11: <b>Optimized code</b> <br> - Organized code, added new<br> functions reduced code size<br> improved understandability</p1></code>
     </div>
     
+    <div id="app2" class="window"> <!--width override here-->
+      <div id="app2header" class="windowheader ">Wallaper</div>
+      <div id="app2close" class="closebutton"></div>
 
+      <h3>Select your wallpaper!</h3>
+
+      <img src="./wallpaper/wallpaper1.jpg" alt="2" class="wallpaperStyle" id="wallpaper1">
+      <img src="./wallpaper/wallpaper2.jpg" alt="2" class="wallpaperStyle" id="wallpaper2">
+
+
+      
+
+    </div>
 
     <!--Script Link-->
     <script src="script.js"></script>
@@ -52,6 +72,7 @@
     <!--Preloading close script?-->
     <script>
       document.getElementById("app1").style.display = "none"
+      document.getElementById("app2").style.display = "none"
     </script>
     
     <link rel="stylesheet" type="text/css" href="style.css" />
