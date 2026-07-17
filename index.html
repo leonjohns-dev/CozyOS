@@ -39,6 +39,11 @@
       <div class="appStyleText">Wallpaper</div>
     </div>
 
+    <div  class="appStyle" id="app3open" style="transform: translateY(240px);" >
+      <span style="font-size: 60px;"></span>
+      <img src="./photos/YouTube_full-color_icon_(2017).jpg" style="width:75px; transform:  translateY(14px) translateX(5px);">
+      <div class="appStyleText" style="font-size: 13px; transform:  translateY(24px) " >Youtube Player</div>
+    </div>
 
     
 
@@ -60,9 +65,18 @@
 
       <img src="./wallpaper/wallpaper1.jpg" alt="2" class="wallpaperStyle" id="wallpaper1">
       <img src="./wallpaper/wallpaper2.jpg" alt="2" class="wallpaperStyle" id="wallpaper2">
+      <img src="./wallpaper/wallpaper3.jpg" alt="2" class="wallpaperStyle" id="wallpaper3">
 
+    </div>
 
-      
+    <div id="app3" class="window" style="display: flex; flex-direction:column; " > <!--width override here-->
+      <div id="app3header" class="windowheader">YouTube</div>
+      <div id="app3close" class="closebutton"></div>
+
+      <iframe  id = "ytPlayer" style = "padding:5px;" src="https://www.youtube.com/embed/X4VbdwhkE10?si=dUO2Op9sMDBD-XTa"> </iframe>
+      <input type="text" id="ytUrl" style = "Width: 280px;" placeholder="Enter embeded url for other YT vids"> 
+      <div id="ytAccept" class="ytAcceptButton"></div>
+
 
     </div>
 
@@ -73,6 +87,8 @@
     <script>
       document.getElementById("app1").style.display = "none"
       document.getElementById("app2").style.display = "none"
+      document.getElementById("app3").style.display = "none"
+
     </script>
     
     <link rel="stylesheet" type="text/css" href="style.css" />

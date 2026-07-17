@@ -25,6 +25,7 @@ setInterval(count, 1000);
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("app1"));
 dragElement(document.getElementById("app2"));
+dragElement(document.getElementById("app3"));
 
 
 
@@ -89,16 +90,25 @@ function closeWindow(element){
 
 //opening windows
 function openWindow(element) {
-  element.style.display = ""//flex kinda ruins my thing horrible code from my part:<
+  if(element.id === "app3"){
+    element.style.display = "flex"
+  }
+  else{
+    element.style.display = ""//flex kinda ruins my thing horrible code from my part:<
+  }
 }
 
 
 openClose(document.getElementById("welcome"))
 openClose(document.getElementById("app1"))
 openClose(document.getElementById("app2"))
+openClose(document.getElementById("app3"))
+
 
 wallpaper(document.getElementById("wallpaper1"))
 wallpaper(document.getElementById("wallpaper2"))
+wallpaper(document.getElementById("wallpaper3"))
+
 
 //Wallpaper scripts
 function wallpaper(element){
@@ -110,6 +120,20 @@ function wallpaper(element){
 
 
 
+
+
+//yt player
+
+document.getElementById("ytAccept").addEventListener("click", function(){
+  loadVid();
+});
+
+function loadVid(){
+  const player = document.getElementById("ytPlayer");
+  const urlID = document.getElementById("ytUrl").value.slice(-11);
+
+  player.src = "https://www.youtube.com/embed/"+urlID;
+}
 
 
 
