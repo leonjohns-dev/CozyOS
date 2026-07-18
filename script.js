@@ -1,6 +1,35 @@
 //Keep the apps closed at the start 
 //closeWindow(app1);
 
+//water
+
+let drinkCount = 0;
+function addDrinkCount(){
+  drinkCount++;
+  document.getElementById("drinkCount").replaceChildren(drinkCount.toString());
+}
+
+document.getElementById("drinkButton").addEventListener("click", function(){
+  addDrinkCount();
+
+});
+
+
+let drinkTime = 60;
+function drinkTimer(){
+
+  if(drinkTime === 0){
+
+    drinkTime = 60;
+    document.getElementById("dingAudio").play();
+  }
+
+  drinkTime--;
+  document.getElementById("drinktime").replaceChildren(drinkTime.toString());
+}
+setInterval(drinkTimer, 60000);
+
+
 
 function updateTime() {
         var currentTime = new Date().toLocaleString();
@@ -26,7 +55,7 @@ dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("app1"));
 dragElement(document.getElementById("app2"));
 dragElement(document.getElementById("app3"));
-
+dragElement(document.getElementById("app4"));
 
 
 function dragElement(elmnt) {
@@ -83,6 +112,7 @@ function openClose(element){
 
 
 
+
 //closing windows
 function closeWindow(element){
     element.style.display = "none"
@@ -103,6 +133,8 @@ openClose(document.getElementById("welcome"))
 openClose(document.getElementById("app1"))
 openClose(document.getElementById("app2"))
 openClose(document.getElementById("app3"))
+openClose(document.getElementById("app4"))
+
 
 
 wallpaper(document.getElementById("wallpaper1"))
@@ -134,6 +166,10 @@ function loadVid(){
 
   player.src = "https://www.youtube.com/embed/"+urlID;
 }
+
+
+
+
 
 
 

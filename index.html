@@ -45,6 +45,12 @@
       <div class="appStyleText" style="font-size: 13px; transform:  translateY(24px) " >Youtube Player</div>
     </div>
 
+    <div  class="appStyle" id="app4open" style="transform: translateY(350px);" >
+      <span style="font-size: 60px;">🥤</span>
+      <div class="appStyleText">Water Tracker</div>
+    </div>
+
+
     
 
     <div id="app1" class="window" > <!--width override here-->
@@ -80,6 +86,30 @@
 
     </div>
 
+
+    <!--water tracker-->
+    <div id="app4" class="window" style="width:90px; height:270px;"> <!--width override here-->
+      <div id="app4header" class="windowheader">Water Tracker</div>
+      <div id="app4close" class="closebutton"></div>
+
+      <!--water bottle drawing-->
+      <div style="display: flex; flex-direction:column; ">
+        
+        <div>Time until next drink</div>
+        <div id="drinktime"><b>60</b></div>
+        <div>Minutes</div>
+        <img src="./photos/glassofwater4.png" class="waterGlass">
+        <div id="drinkCount" class="drinkNumber">0</div>
+
+        <div id="drinkButton" class="drinkButton">Drink!</div>
+        
+        <audio id="dingAudio">
+          <source src="./assets/freesound_community-microwave-ding-104123.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+    </div>
+
     <!--Script Link-->
     <script src="script.js"></script>
 
@@ -88,7 +118,7 @@
       document.getElementById("app1").style.display = "none"
       document.getElementById("app2").style.display = "none"
       document.getElementById("app3").style.display = "none"
-
+      document.getElementById("app4").style.display = "none"
     </script>
     
     <link rel="stylesheet" type="text/css" href="style.css" />
