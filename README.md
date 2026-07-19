@@ -8,12 +8,12 @@
 <h1>Apps</h1>
 
 <h3>Background Control</h3>
-<p>Choose your background</p>
+<p>- Choose your background</p>
 
 <h3>Youtube</h3>
-<p>A little YouTube app in which you can put a YouTube link to play a YouTube video</p>
+<p>- A little YouTube app in which you can put a YouTube link to play a YouTube video</p>
 
-<h3>Youtube</h3>
+<h3>Water Tracker</h3>
 <p>- Track the amount of water you have drank</p>
 <p>- Reminds you to drink water</p>
 
