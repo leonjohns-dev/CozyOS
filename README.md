@@ -7,8 +7,10 @@
 
 
 <h1><b>Credits</b></h1>
+
 <p>https://github.com/SerenityUX for the tutorial</p>
-<p>Credits for assests</p>
+<p>For AI for helping me better understand the code and helping me with the active time app</p>
+
 
 <p><b>backgrounds:</b></p>
 
@@ -19,9 +21,10 @@
 <p>https://unsplash.com/photos/tall-pine-trees-in-a-misty-forest-RfSMtI-KeMo</p>
 
 
-<p>For AI for helping me better understand the code and helping me with the active time app</p>
 
 <p>Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=104123">freesound_community</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=104123">Pixabay</a></p>
 
 <img width="1533" height="725" alt="Screenshot" src="https://github.com/user-attachments/assets/66e5b65a-de28-4aae-b494-0f6cc340bc8b" />
+
+
 <p>Try it out!:  https://leonjohns-dev.github.io/CozyOS/</p>
