@@ -7,13 +7,13 @@
 
 <h1>Apps</h1>
 
-<h2>Background Control</h2>
+<h3>Background Control</h3>
 <p>Choose your background</p>
 
-<h2>Youtube</h2>
+<h3>Youtube</h3>
 <p>A little YouTube app in which you can put a YouTube link to play a YouTube video</p>
 
-<h2>Youtube</h2>
+<h3>Youtube</h3>
 <p>- Track the amount of water you have drank</p>
 <p>- Reminds you to drink water</p>
 
