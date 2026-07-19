@@ -5,6 +5,19 @@
 <h1>Features</h1>
 <p>-Glass theme (inspired by manu other designs) <br> -Draggability of windows(little broken) <br> -Counts seconds since website was active</p>
 
+<h1>Apps</h1>
+
+<h2>Background Control</h2>
+<p>Choose your background</p>
+
+<h2>Youtube</h2>
+<p>A little YouTube app in which you can put a YouTube link to play a YouTube video</p>
+
+<h2>Youtube</h2>
+<p>- Track the amount of water you have drank</p>
+<p>- Reminds you to drink water</p>
+
+
 
 <h1><b>Credits</b></h1>
 
