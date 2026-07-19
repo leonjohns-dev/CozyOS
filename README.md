@@ -8,7 +8,9 @@
 
 <h1>Credits</h1>
 <p>https://github.com/SerenityUX for the tutorial</p>
-<p>Credit for background: https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A</p>
+<p>Credit for background:</p>
+
+<p> https://unsplash.com/photos/abstract-yellow-flowers-with-soft-focus-and-warm-light-4Vzs0NASt7A</p>
 
 <p>https://unsplash.com/photos/snow-mountain-under-stars-phIFdC6lA4E</p>
 
