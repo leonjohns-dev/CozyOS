@@ -6,7 +6,7 @@
 <p>-Glass theme (inspired by manu other designs) <br> -Draggability of windows(little broken) <br> -Counts seconds since website was active</p>
 
 
-<h1>Credits</h1>
+<h1><b>Credits</b></h1>
 <p>https://github.com/SerenityUX for the tutorial</p>
 <p>Credits for assests</p>
 
