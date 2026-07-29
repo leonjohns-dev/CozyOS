@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet"></head>
   <body style="background-image:url(./wallpaper/wallpaper1.jpg); background-size: cover; background-repeat: no-repeat; ">
     
     <!--top bar-->
@@ -14,7 +18,45 @@
       </p>
     </div>
 
-    
+
+    <!--Quotes--> 
+    <div id="quote">
+      <p dir="rtl" id="quoteText" class="quoteText">Loading...</p>
+      <p dir="rtl" id="quoteAuthor"  class="quoteText"></p>
+    </div>
+
+
+    <!--Hover Strip-->
+    <div id = "hoverStrip" class = "hoverStrip"></div>
+
+    <!--Sliding bar left-->
+    <div id ="sideBar" class="sideBar">
+      
+       <!--Apps-->
+      <!--App 1 Ideas and fixes?-->
+      <div  class="appStyle" id="app1open" >
+        <span style="font-size: 60px;">📒</span>
+        <div class="appStyleText">Updates</div>
+      </div>
+
+      <div  class="appStyle" id="app2open" style="transform: translateY(120px);" >
+        <span style="font-size: 60px;">🖼️</span>
+        <div class="appStyleText">Wallpaper</div>
+      </div>
+
+      <div  class="appStyle" id="app3open" style="transform: translateY(240px);" >
+        <span style="font-size: 60px;"></span>
+        <img src="./photos/YouTube_full-color_icon_(2017).jpg" style="width:75px; transform:  translateY(14px) translateX(5px);">
+        <div class="appStyleText" style="font-size: 13px; transform:  translateY(24px) " >Youtube</div>
+      </div>
+
+      <div  class="appStyle" id="app5open" style="transform: translateY(365px);" >
+        <p style="transform:  translateY(-114px) translateX(-19px); font-size: 90px;">💠</p>
+        <div class="appStyleText" style="transform: translateY(-210px);">Apps</div>
+      </div>
+      
+
+    </div>
    
 
     <!--Welcome Message-->
@@ -27,31 +69,6 @@
 
     </div>
 
-    <!--Apps-->
-    <!--App 1 Ideas and fixes?-->
-    <div  class="appStyle" id="app1open" >
-      <span style="font-size: 60px;">📒</span>
-      <div class="appStyleText">Updates</div>
-    </div>
-
-    <div  class="appStyle" id="app2open" style="transform: translateY(120px);" >
-      <span style="font-size: 60px;">🖼️</span>
-      <div class="appStyleText">Wallpaper</div>
-    </div>
-
-    <div  class="appStyle" id="app3open" style="transform: translateY(240px);" >
-      <span style="font-size: 60px;"></span>
-      <img src="./photos/YouTube_full-color_icon_(2017).jpg" style="width:75px; transform:  translateY(14px) translateX(5px);">
-      <div class="appStyleText" style="font-size: 13px; transform:  translateY(24px) " >Youtube Player</div>
-    </div>
-
-    <div  class="appStyle" id="app4open" style="transform: translateY(350px);" >
-      <span style="font-size: 60px;">🥤</span>
-      <div class="appStyleText">Water Tracker</div>
-    </div>
-
-
-    
 
     <div id="app1" class="window" > <!--width override here-->
       <div id="app1header" class="windowheader">Updates!</div>
@@ -110,6 +127,44 @@
       </div>
     </div>
 
+
+    <!--apps app-->
+    <div id="app5" class="window" style="display: flex; flex-direction:column; width:200px; height:200px" > <!--width override here-->
+      <div id="app5header" class="windowheader">Apps</div>
+      <div id="app5close" class="closebutton"></div>
+
+      <div  class="appStyle" id="app4open" style="transform: translateY(50px)">
+        <span style="font-size: 60px;">🥤</span>
+        <div class="appStyleText">Water Tracker</div>
+      </div>
+
+      <div  class="appStyle" id="app6open" style="transform: translateY(50px) translateX(100px);" >
+        <span style="font-size: 60px;">🌐</span>
+        <div class="appStyleText">Internet</div>
+      </div>
+
+    </div>
+
+    <!--internet-->
+    <div id="app6" class="window" style="display: flex; flex-direction:column; width:200px; height:120px" > <!--width override here-->
+      <div id="app6header" class="windowheader">Internet</div>
+      <div id="app6close" class="closebutton"></div>
+
+
+      <input type="text" id="searchInput"  style = "transform: translateY(10px)" placeholder="What do you want to search?"> 
+      <select id="engineSelect" style="transform: translateY(15px)">
+        <option value="">--Choose your engine--</option>
+        <option value="google">Google</option>
+        <option value="yahoo">yahoo</option>
+        <option value="duck">DuckDuckGo</option>
+        <option value="bing">Bing</option>
+      </select>
+
+      <div id="searchButton" class="searchButton">
+        Search!
+      </div>
+
+    </div>
     <!--Script Link-->
     <script src="script.js"></script>
 
@@ -119,7 +174,16 @@
       document.getElementById("app2").style.display = "none"
       document.getElementById("app3").style.display = "none"
       document.getElementById("app4").style.display = "none"
+      document.getElementById("app5").style.display = "none"
+      document.getElementById("app6").style.display = "none"
+
+
+      
+      document.getElementById("sideBar").classList.add("open");
+      console.log("sidebar opened");
+
     </script>
+    
     
     <link rel="stylesheet" type="text/css" href="style.css" />
     

@@ -56,6 +56,8 @@ dragElement(document.getElementById("app1"));
 dragElement(document.getElementById("app2"));
 dragElement(document.getElementById("app3"));
 dragElement(document.getElementById("app4"));
+dragElement(document.getElementById("app5"));
+dragElement(document.getElementById("app6"));
 
 
 function dragElement(elmnt) {
@@ -134,6 +136,9 @@ openClose(document.getElementById("app1"))
 openClose(document.getElementById("app2"))
 openClose(document.getElementById("app3"))
 openClose(document.getElementById("app4"))
+openClose(document.getElementById("app5"))
+openClose(document.getElementById("app6"))
+
 
 
 
@@ -169,7 +174,81 @@ function loadVid(){
 
 
 
+//side bar
+const hoverStrip = document.getElementById("hoverStrip");
+const sideBar = document.getElementById("sideBar");
+
+hoverStrip.addEventListener("mouseenter", openSideBar);
+sideBar.addEventListener("mouseenter", openSideBar);
+
+hoverStrip.addEventListener("mouseleave", closeSideBar);
+sideBar.addEventListener("mouseleave", closeSideBar);
+
+
+function openSideBar(){
+  sideBar.classList.add("open");
+  console.log("sidebar opened");
+}
+
+function closeSideBar(){
+  sideBar.classList.remove("open");
+  console.log("sideBar closed");
+}
 
 
 
+//Quotes
 
+const quoteText = document.getElementById("quoteText");
+const quoteAuthor = document.getElementById("quoteAuthor");
+
+async function getQuote(){
+  const response = await fetch("https://gist.githubusercontent.com/nasrulhazim/54b659e43b1035215cd0ba1d4577ee80/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json");
+  
+  const data = await response.json();
+
+  let randomIndex = Math.floor(Math.random()*data.quotes.length);
+  console.log(randomIndex);
+
+  console.log(data.quotes[randomIndex].quote);
+  console.log(data.quotes[randomIndex].author);
+
+  quoteText.innerHTML = data.quotes[randomIndex].quote;
+  quoteAuthor.innerHTML = data.quotes[randomIndex].author;
+}
+
+
+getQuote();
+
+
+
+//search engine
+const searchInput = document.getElementById("searchInput"); 
+const engineSelect = document.getElementById("engineSelect"); 
+const searchButton = document.getElementById("searchButton"); 
+
+searchButton.addEventListener("click", search);
+
+function search(){
+  let input = searchInput.value;
+  let engine = engineSelect.value;
+
+  let inputConvert = encodeURIComponent(input);
+
+  let url = "";
+
+  if(engine == "google"){
+    url = "https://www.google.com/search?q=" + inputConvert;
+  }
+  else if(engine == "bing"){
+    url = "https://www.bing.com/search?q=" + inputConvert;
+  }
+  else if(engine == "duck"){
+    url = "https://duckduckgo.com/?q=" + inputConvert;
+  }
+  else if(engine == "yahoo"){
+    url = "https://search.yahoo.com/search?p=" + inputConvert;
+  }
+
+  window.open(url, "_blank");
+}
