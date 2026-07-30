@@ -134,7 +134,7 @@
 
 
     <!--apps app-->
-    <div id="app5" class="window" style="display: flex; flex-direction:column; width:200px; height:200px" > <!--width override here-->
+    <div id="app5" class="window" style="display: flex; flex-direction:column; width:300px; height:200px" > <!--width override here-->
       <div id="app5header" class="windowheader">Apps</div>
       <div id="app5close" class="closebutton"></div>
 
@@ -146,6 +146,11 @@
       <div  class="appStyle" id="app6open" style="transform: translateY(50px) translateX(100px);" >
         <span style="font-size: 60px;">🌐</span>
         <div class="appStyleText">Internet</div>
+      </div>
+
+      <div  class="appStyle" id="app7open" style="transform: translateY(50px) translateX(200px);" >
+        <span style="font-size: 60px;">🍅</span>
+        <div class="appStyleText">Pomodoro</div>
       </div>
 
     </div>
@@ -170,6 +175,26 @@
       </div>
 
     </div>
+
+    <!--Pomodoro-->
+    <div id="app7" class="window" style="display: flex; flex-direction:column; width:200px; height:165px" > <!--width override here-->
+      <div id="app7header" class="windowheader">Pomodoro</div>
+      <div id="app7close" class="closebutton"></div>
+
+      <p id="pomoStatus" style = "transform: translateY(-15px);">Work Time</p>
+      
+      <div class="pomoTimer" style="transform: translateX(10px) translateY(60px);"> <p id="minutes"  class="timerText">25</p> </div>
+      <div  class="pomoTimer"  style="transform: translateX(114px) translateY(60px);"> <p id="seconds"  class="timerText">60</p> </div>
+
+      <div id="startStopButton" class="startStopButton">
+        Start
+      </div>
+
+      <audio id="dingAudio">
+          <source src="./assets/freesound_community-microwave-ding-104123.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
     <!--Script Link-->
     <script src="script.js"></script>
 

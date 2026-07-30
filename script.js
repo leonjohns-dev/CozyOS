@@ -58,6 +58,8 @@ dragElement(document.getElementById("app3"));
 dragElement(document.getElementById("app4"));
 dragElement(document.getElementById("app5"));
 dragElement(document.getElementById("app6"));
+dragElement(document.getElementById("app7"));
+
 
 
 function dragElement(elmnt) {
@@ -138,6 +140,7 @@ openClose(document.getElementById("app3"))
 openClose(document.getElementById("app4"))
 openClose(document.getElementById("app5"))
 openClose(document.getElementById("app6"))
+openClose(document.getElementById("app7"))
 
 
 
@@ -252,3 +255,91 @@ function search(){
 
   window.open(url, "_blank");
 }
+
+//pomodoro
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+const pomoStatus = document.getElementById("pomoStatus");
+
+const startStopButton = document.getElementById("startStopButton");
+
+let totalSeconds = 25*60;
+let timerRunning = false;
+let work = true;
+
+
+startStopButton.addEventListener("click", startStop);
+
+
+
+let timerID;
+
+function startStop(){
+  
+  if(timerRunning == false){
+    
+    timerRunning = true;
+    startStopButton.textContent = "Stop";
+    startStopButton.classList.add("stop");
+    timer(true);
+
+  }
+  else if(timerRunning == true){
+
+    timerRunning = false;
+    startStopButton.textContent = "Start";
+    startStopButton.classList.remove("stop");
+
+    clearTimeout(timerID);
+  }
+
+}
+
+function timer(counter){
+  if(counter == true){
+
+    if(totalSeconds == 0){
+      if(work == true){
+        work = false;
+        totalSeconds = 5*60;
+
+        pomoStatus.textContent = "Break Time!";
+      }
+      else if(work == false){
+        work = true;
+        totalSeconds = 25*60;
+
+        pomoStatus.textContent = "Work Time";
+      }
+
+      let mins = Math.floor(totalSeconds/60);
+      let secs = totalSeconds%60;
+
+      minutes.textContent = mins.toString().padStart(2,"0");
+      seconds.textContent = secs.toString().padStart(2,"0");
+
+      document.getElementById("dingAudio").play();
+      startStop()
+      return;
+    }
+
+
+    timerID = setTimeout(() => {
+      totalSeconds--;
+
+      let mins = Math.floor(totalSeconds/60);
+      let secs = totalSeconds%60;
+
+      minutes.textContent = mins.toString().padStart(2,"0");
+      seconds.textContent = secs.toString().padStart(2,"0");
+
+      timer(true);
+    }, 1000)
+    
+  }
+  else if (counter == false){
+   console.log("done");
+  }
+}
+
+   console.log("fire easter egg");
