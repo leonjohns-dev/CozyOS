@@ -3,7 +3,8 @@
 <p>CozyOS is a cool, warm-looking simulation of a computer operating system made as part of stardance.hackclub's "My very own WebOS" mission.</p>
 
 <h1>Features</h1>
-<p>-Glass theme (inspired by manu other designs) <br> -Draggability of windows(little broken) <br> -Counts seconds since website was active</p>
+<p>-Glass theme (inspired by manu other designs)
+<p>-Inspirational quotes</p>
 
 <h1>Apps</h1>
 
@@ -17,6 +18,18 @@
 <p>- Track the amount of water you have drank.</p>
 <p>- Reminds you to drink water.</p>
 
+
+<h3>Internet</h3>
+<p>- Can search up things on the internet</p>
+<p>- Can choose between four different search engines</p>
+
+<h3>Pomodoro</h3>
+<p>- A simple pomodoro timer with a 25-minute work period and a 5-minute break period</p>
+<p>- A Ding sound effect to notify the end of a session</p>
+<p>- Pause functionality</p>
+
+<h3>Spotify</h3>
+<p>- Linked to a Spotify playlist which you can play on the OS</p>
 
 
 <h1><b>Credits</b></h1>
