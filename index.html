@@ -134,7 +134,7 @@
 
 
     <!--apps app-->
-    <div id="app5" class="window" style="display: flex; flex-direction:column; width:300px; height:200px" > <!--width override here-->
+    <div id="app5" class="window" style="display: flex; flex-direction:column; width:300px; height:290px" > <!--width override here-->
       <div id="app5header" class="windowheader">Apps</div>
       <div id="app5close" class="closebutton"></div>
 
@@ -151,6 +151,12 @@
       <div  class="appStyle" id="app7open" style="transform: translateY(50px) translateX(200px);" >
         <span style="font-size: 60px;">🍅</span>
         <div class="appStyleText">Pomodoro</div>
+      </div>
+
+      <div  class="appStyle" id="app8open" style="transform: translateY(190px);" >
+        <span style="font-size: 60px;"></span>
+        <img src="./photos/Spotify_Primary_Logo_RGB_Green.png" style="width:75px; transform:  translateY(5px) translateX(0px);">
+        <div class="appStyleText" style="font-size: 15px; transform:  translateY(-1px) " >Spotify</div>
       </div>
 
     </div>
@@ -180,7 +186,7 @@
     <div id="app7" class="window" style="display: flex; flex-direction:column; width:200px; height:165px" > <!--width override here-->
       <div id="app7header" class="windowheader">Pomodoro</div>
       <div id="app7close" class="closebutton"></div>
-`
+
       <p id="pomoStatus" style = "transform: translateY(-30px);">Work Time</p>
       
       <div class="pomoTimer" style="transform: translateX(10px) translateY(-45px);"> <p id="minutes"  class="timerText">25</p> </div>
@@ -195,6 +201,15 @@
         </audio>
     </div>
 
+    <!--Spotify-->
+    <div id="app8" class="window" style="display: flex; flex-direction:column; width:352px; height:205px" > <!--width override here-->
+      <div id="app8header" class="windowheader">Spotify</div>
+      <div id="app8close" class="closebutton"></div>
+
+      <iframe data-testid="embed-iframe" style=" transform: translateY(10px); border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0&si=25e5ee4e05914c65" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    </div>
+
     <!--Script Link-->
     <script src="script.js"></script>
 
@@ -207,6 +222,7 @@
       document.getElementById("app5").style.display = "none"
       document.getElementById("app6").style.display = "none"
       document.getElementById("app7").style.display = "none"
+      document.getElementById("app8").style.display = "none"
 
 
       

@@ -59,6 +59,7 @@ dragElement(document.getElementById("app4"));
 dragElement(document.getElementById("app5"));
 dragElement(document.getElementById("app6"));
 dragElement(document.getElementById("app7"));
+dragElement(document.getElementById("app8"));
 
 
 
@@ -141,7 +142,7 @@ openClose(document.getElementById("app4"))
 openClose(document.getElementById("app5"))
 openClose(document.getElementById("app6"))
 openClose(document.getElementById("app7"))
-
+openClose(document.getElementById("app8"))
 
 
 
